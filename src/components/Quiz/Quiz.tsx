@@ -26,7 +26,7 @@ const Quiz = () => {
   }, []);
 
   const questionList = questions.map((questions, numb) => {
-    return <Item key={numb} title={questions.category} />;
+    return <Item key={numb} title={questions.question} />;
   });
   return <div>{questionList}</div>;
 };
