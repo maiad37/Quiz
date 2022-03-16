@@ -1,0 +1,22 @@
+button.next{
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 2px 450px;
+}
+button.true, button.false{
+    margin-left: 80px;
+    width: 150px;
+}
+button.next{
+    margin-top: 40px;
+}
+button{
+    font-weight:900;
+    cursor: pointer;
+    border:none;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    width: 5vw;
+    font-size: 2.2vh;
+}
