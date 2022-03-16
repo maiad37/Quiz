@@ -1,11 +1,13 @@
 .container{
-    height:400px;
-    width: 400px;
+    height: 90%;
+    width: fit-content;
     margin: 5% auto;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     background-color: rgb(255, 227, 175);
     box-shadow: 1px 2px 3px 2px grey;
+    font-size: 3vh;
+    overflow: hidden;
 }
 .container h1{
     text-align: center;
