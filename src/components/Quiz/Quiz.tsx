@@ -11,16 +11,18 @@ const Quiz:React.FC = () => {
   //     incorrect_answer: "True" | "False";
   //     question:string;
   // }
+
    const nextQuestion = () => {
      if( qNum <10){
       setQnum(qNum+1)
-     }
+    }
    }
 
    const checkAnswer = () => {
      if(userAnswer===correct){
       console.log("you are correct!")
-      nextQuestion()
+      var Tbtn = document.getElementById("true")
+      Tbtn?.style.backgroundColor = "green";
      }else{
        console.log("you are wrong!")
      }
@@ -28,7 +30,8 @@ const Quiz:React.FC = () => {
   const [questions, setQuestions] = useState([]),
    [qNum, setQnum] = useState(0),
    [userAnswer, setUserAnswer] = useState(""),
-   [correct, setCorrect] = useState("")
+   [correct, setCorrect] = useState(""), 
+   [color, setColor] = useState("grey");
 
   useEffect(() => {
     axios
@@ -47,7 +50,7 @@ const Quiz:React.FC = () => {
     <>
       <div>
         {`${qNum + 1} - ${questions} `}
-        <div>
+        <div className="buttons">
           <button className="true" value="True" onClick={()=>{setUserAnswer("True"); checkAnswer()}}>True</button>
           <button className="false" value="False" onClick={()=>{setUserAnswer("False"); checkAnswer()}}>False</button>
         </div>
