@@ -3,12 +3,20 @@ button.next{
     padding: 10px;
     margin: 2px 450px;
 }
+.buttons{
+    padding: 20px;
+    width: 400px;
+    height:200px;
+    margin: 0px auto;
+}
 button.true, button.false{
-    margin-left: 80px;
     width: 150px;
+    margin-right: 40px;
 }
 button.next{
-    margin-top: 40px;
+    width: fit-content;
+    margin-top: 20px;
+    float: right;
 }
 button{
     font-weight:900;
