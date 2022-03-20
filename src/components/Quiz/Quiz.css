@@ -4,19 +4,18 @@ button.next{
     margin: 2px 450px;
 }
 .buttons{
+    columns: 160px 2;
     padding: 20px;
     width: 400px;
-    height:200px;
+    height:80px;
     margin: 0px auto;
 }
 button.true, button.false{
     width: 150px;
-    margin-right: 40px;
 }
 button.next{
-    width: fit-content;
+    width: 150px;
     margin-top: 20px;
-    float: right;
 }
 button{
     font-weight:900;
