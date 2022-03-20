@@ -25,13 +25,14 @@ const Quiz: React.FC = () => {
 
   const checkAnswer = (btnVal:string) => {
     setUserAnswer(btnVal)
+  };
+
+  useEffect(()=>{
+    console.log("User answer:" + userAnswer + "\nCorrect:" + correct);
     if (userAnswer === correct) {
       setScore(score + 1);
-      console.log("User answer:" + userAnswer + "\nCorrect:" + correct);
-    } else {
-      console.log("User answer:" + userAnswer + "\nCorrect:" + correct);
-    }
-  };
+    } 
+  },[userAnswer])
 
   useEffect(() => {
     axios
@@ -44,6 +45,7 @@ const Quiz: React.FC = () => {
         );
         setCorrect(response.data.results[qNum].correct_answer);
         console.log(response.data.results[qNum].correct_answer);
+        setUserAnswer("")
       });
   }, [qNum]);
 
