@@ -1,6 +1,6 @@
 .container{
-    height: 90%;
-    width: fit-content;
+    height: 60vh;
+    width: 50vw;
     margin: 5% auto;
     padding: 30px;
     border-radius: 10px;
@@ -11,4 +11,5 @@
 }
 .container h1{
     text-align: center;
+    margin-bottom: 20px;
 }
