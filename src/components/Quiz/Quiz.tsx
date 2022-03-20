@@ -18,7 +18,7 @@ const Quiz: React.FC = () => {
   // }
 
   const nextQuestion = () => {
-    if (qNum < 10) {
+    if (qNum < 9) {
       setQnum(qNum + 1);
     }
   };
