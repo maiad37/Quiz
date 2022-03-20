@@ -23,7 +23,8 @@ const Quiz: React.FC = () => {
     }
   };
 
-  const checkAnswer = () => {
+  const checkAnswer = (btnVal:string) => {
+    setUserAnswer(btnVal)
     if (userAnswer === correct) {
       setScore(score + 1);
       console.log("User answer:" + userAnswer + "\nCorrect:" + correct);
@@ -58,8 +59,7 @@ const Quiz: React.FC = () => {
             className="true"
             value="True"
             onClick={() => {
-              setUserAnswer("True");
-              checkAnswer();
+              checkAnswer("True");
             }}
           >
             True
@@ -68,8 +68,7 @@ const Quiz: React.FC = () => {
             className="false"
             value="False"
             onClick={() => {
-              setUserAnswer("False");
-              checkAnswer();
+              checkAnswer("False");
             }}
           >
             False
