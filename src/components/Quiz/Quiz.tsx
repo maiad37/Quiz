@@ -5,7 +5,7 @@ import axios from "axios";
 const Quiz: React.FC = () => {
   const [questions, setQuestions] = useState([]),
     [qNum, setQnum] = useState(0),
-    [userAnswer, setUserAnswer] = useState("undeff"),
+    [userAnswer, setUserAnswer] = useState<string | undefined>(undefined),
     [correct, setCorrect] = useState(""),
     [score, setScore] = useState(0);
   // interface Q{
