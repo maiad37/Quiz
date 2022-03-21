@@ -1,2 +1,2 @@
-# TS & REACT
+# TS & REACT PROJECT
 
