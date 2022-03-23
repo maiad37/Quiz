@@ -7,8 +7,7 @@ const Quiz: React.FC = () => {
     [qNum, setQnum] = useState<number>(-1),
     [userAnswer, setUserAnswer] = useState<string | undefined>(undefined),
     [correct, setCorrect] = useState<string>(""),
-    [score, setScore] = useState<number>(0),
-    [msg, setMsg] = useState<string>("");
+    [score, setScore] = useState<number>(0);
 
   const nextQuestion = () => {
     if (qNum <= 9) {
