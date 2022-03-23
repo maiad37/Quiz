@@ -4,7 +4,7 @@ import axios from "axios";
 
 const Quiz: React.FC = () => {
   const [questions, setQuestions] = useState<string[]>([]),
-    [qNum, setQnum] = useState<number>(0),
+    [qNum, setQnum] = useState<number>(-1),
     [userAnswer, setUserAnswer] = useState<string | undefined>(undefined),
     [correct, setCorrect] = useState<string>(""),
     [score, setScore] = useState<number>(0),
