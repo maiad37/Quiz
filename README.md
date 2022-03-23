@@ -1,2 +1,2 @@
-# Quiz made with React and Typscript 
-
+# Quiz 
+Made with React and Typscript 
