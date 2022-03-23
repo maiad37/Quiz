@@ -1,3 +1,10 @@
+.questions {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 button {
   font-weight: 900;
   cursor: pointer;
