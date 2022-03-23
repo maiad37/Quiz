@@ -10,8 +10,15 @@ button {
   background-color: rgb(233, 182, 190);
   box-shadow: 3px 2px 1px rgb(78, 47, 12);
 }
+.questions{
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
 .nextBtn,
-.restartBtn {
+.restartBtn,
+.startBtn {
   width: fit-content;
 }
 .buttons {
@@ -20,7 +27,8 @@ button {
 }
 .buttons,
 .nextBtn,
-.restartBtn {
+.restartBtn,
+.startBtn {
   padding: 20px;
   height: 80px;
   margin: 0px auto;
@@ -28,7 +36,8 @@ button {
 button.true,
 button.false,
 button.next,
-button.restart {
+button.restart,
+button.start{
   width: 150px;
   font-family: 'Special Elite', cursive;
 }
@@ -40,7 +49,7 @@ button.next {
   text-align: center;
   font-weight: 700;
 }
-#final-score {
+div#final-score {
 }
 #msg {
 }
@@ -50,4 +59,7 @@ button.next {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+div.instructions{
+    line-height: 1.5;
 }
