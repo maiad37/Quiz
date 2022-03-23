@@ -1,2 +1,2 @@
-# TS & REACT PROJECT
+# Quiz made with React and Typscript 
 
