@@ -113,9 +113,6 @@ const Quiz: React.FC = () => {
       });
   }, [qNum]);
 
-  // const questionList = questions.map((questions: any, numb:number) => {
-  //   return <Item key={numb} title={questions.question.replaceAll('&#039;', "'").replaceAll("&quot;", '"')} />;
-  // });
   return (
     <>
       <div>{showQuiz()}</div>
