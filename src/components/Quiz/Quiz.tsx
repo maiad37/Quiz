@@ -21,7 +21,22 @@ const Quiz: React.FC = () => {
   };
  
   const showQuiz = () => {
-    if (qNum < 10) {
+    if (qNum === -1){
+      return(
+        <div>
+          <h3>Instructions:</h3>
+          <div className="instructions">
+            <p>- Press "Start" when you are ready to begin!</p>
+            <p>- This quiz has 10 questions.</p>
+            <p>- After you select an answer, the question will automatically change.</p>
+          </div>
+          <div className="startBtn">
+            <button className="start" onClick={()=>setQnum(0)}>Start!</button>
+          </div>
+        </div>
+      )
+    }
+    if (qNum < 10 && qNum!==-1) {
       return (
         <>
           <div className="questions">{`${qNum + 1} - ${questions} `}</div>
