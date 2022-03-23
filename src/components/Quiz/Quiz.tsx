@@ -10,15 +10,6 @@ const Quiz: React.FC = () => {
     [score, setScore] = useState<number>(0),
     [msg, setMsg] = useState<string>("");
 
-  // interface Q{
-  //     category:string;
-  //     type:"boolean";
-  //     difficulty:'easy' | 'medium' | 'hard';
-  //     correct_answer: "True" | "False";
-  //     incorrect_answer: "True" | "False";
-  //     question:string;
-  // }
-
   const nextQuestion = () => {
     if (qNum <= 9) {
       setQnum(qNum + 1);
@@ -28,7 +19,7 @@ const Quiz: React.FC = () => {
   const checkAnswer = (btnVal: string) => {
     setUserAnswer(btnVal);
   };
-  //need to fix so it can show a final message at end of quiz
+ 
   const showQuiz = () => {
     if (qNum < 10) {
       return (
