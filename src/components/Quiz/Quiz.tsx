@@ -67,7 +67,7 @@ const Quiz: React.FC = () => {
             </button>
           </div>
           <p id="score">Score: {score}/10</p>
-          <div className="nextBtn">
+          {/* <div className="nextBtn">
             <button
               className="next"
               onClick={() => {
@@ -76,7 +76,7 @@ const Quiz: React.FC = () => {
             >
               Next
             </button>
-          </div>
+          </div> */}
         </>
       );
     } else {
