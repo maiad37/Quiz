@@ -1,15 +1,18 @@
 .container{
     height: 60vh;
+    min-height: fit-content;
     width: 50vw;
     margin: 5% auto;
     padding: 30px;
     border-radius: 10px;
-    background-color: rgb(255, 227, 175);
-    box-shadow: 1px 2px 3px 2px grey;
-    font-size: 3vh;
+    background-color: rgb(160, 140, 114);
+    box-shadow: 1px 2px 3px 2px rgb(121, 115, 115);
+    font-size: 4vh;
+    text-align: justify;
     overflow: hidden;
+    font-family: 'Special Elite', cursive;
 }
 .container h1{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
