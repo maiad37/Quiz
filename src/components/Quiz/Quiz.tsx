@@ -85,7 +85,7 @@ const Quiz: React.FC = () => {
           <p id="msg">You have completed the Quiz!</p>
           <p id="final-score">Final Score: {score}/10</p>
           <div className="restartBtn">
-            <button className="restart">Restart</button>
+            <button className="restart" onClick={()=>setQnum(-1)}>Restart</button>
           </div>
         </div>
       );
