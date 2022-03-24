@@ -7,7 +7,8 @@ const Quiz: React.FC = () => {
     [qNum, setQnum] = useState<number>(-1),
     [userAnswer, setUserAnswer] = useState<string | undefined>(undefined),
     [correct, setCorrect] = useState<string>(""),
-    [score, setScore] = useState<number>(0);
+    [score, setScore] = useState<number>(0),
+    [allQuestions, setAllQuestions] = useState<any>([]);
 
   const nextQuestion = () => {
     if (qNum <= 9) {
@@ -38,16 +39,16 @@ const Quiz: React.FC = () => {
     if (qNum < 10 && qNum!==-1) {
       return (
         <>
-          <div className="questions">{`${qNum + 1} - ${questions} `}</div>
+          <div className="questions">{`${qNum + 1} - ${allQuestions[qNum].question
+            ?.replaceAll("&#039;", "'")
+            .replaceAll("&quot;", '"')} `}</div>
           <div className="buttons">
             <button
               className="true"
               value="True"
               onClick={() => {
                 checkAnswer("True");
-                setTimeout(() => {
-                  nextQuestion();
-                }, 2000);
+                nextQuestion();
               }}
             >
               True &#10003;
@@ -57,9 +58,7 @@ const Quiz: React.FC = () => {
               value="False"
               onClick={() => {
                 checkAnswer("False");
-                setTimeout(() => {
-                  nextQuestion();
-                }, 1500);
+                nextQuestion();
               }}
             >
               False ✗
@@ -91,6 +90,15 @@ const Quiz: React.FC = () => {
     }
   };
   useEffect(() => {
+    axios
+      .get(`https://opentdb.com/api.php?amount=10&type=boolean`)
+      .then((response) => { 
+        setAllQuestions(response.data.results)
+      })
+  },[])
+
+
+  useEffect(() => {
     console.log("User answer:" + userAnswer + "\nCorrect:" + correct);
     if (userAnswer === correct) {
       setScore(score + 1);
@@ -98,17 +106,17 @@ const Quiz: React.FC = () => {
   }, [userAnswer]);
 
   useEffect(() => {
+    setCorrect(allQuestions[qNum]?.correct_answer);
+    setUserAnswer("");
+
     axios
       .get(`https://opentdb.com/api.php?amount=10&type=boolean`)
       .then((response) => {
         setQuestions(
           response.data.results[qNum].question
-            ?.replaceAll("&#039;", "'")
-            .replaceAll("&quot;", '"')
         );
-        setCorrect(response.data.results[qNum].correct_answer);
+
         console.log(response.data.results[qNum].correct_answer);
-        setUserAnswer("");
       });
   }, [qNum]);
 
