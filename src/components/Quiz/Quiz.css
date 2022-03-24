@@ -30,6 +30,10 @@ button {
 .buttons {
   columns: 160px 2;
   width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .buttons,
@@ -38,6 +42,10 @@ button {
   padding: 20px;
   height: 80px;
   margin: 0px auto;
+}
+button.true,
+button.false{
+  margin-right: 2vw;
 }
 button.true,
 button.false,
