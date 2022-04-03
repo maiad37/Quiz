@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
 }
-.QuizApp{
+body{
     background-image: url(../../images/liam-scotchmer-ownZf0WtAB8-unsplash.jpg);
     background-size: 50%;
 }
