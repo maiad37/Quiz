@@ -3,6 +3,19 @@
     margin: 0;
 }
 body{
-    background-image: url(./images/liam-scotchmer-ownZf0WtAB8-unsplash.jpg);
-    background-size: 50%;
+    background-color: rgb(59, 59, 23);
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10vh auto;
+    width: 60vw;
+    height: 80vh;
+    border: 5px solid black;
+  }
+  .grid-item {
+    border: 20px solid red;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
