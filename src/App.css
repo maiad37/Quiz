@@ -12,10 +12,8 @@ body{
     width:fit-content;
     height: fit-content;
     box-sizing: border-box;
-    border: 5px solid black;
   }
   .grid-item {
-    border: 2px solid rgb(0, 0, 0);
-    padding: 2px;
+    padding: 2px 4px;
     text-align: center;
   }
