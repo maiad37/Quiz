@@ -9,13 +9,13 @@ body{
     display: grid;
     grid-template-columns: auto auto;
     margin: 10vh auto;
-    width: 60vw;
-    height: 80vh;
+    width:fit-content;
+    height: fit-content;
+    box-sizing: border-box;
     border: 5px solid black;
   }
   .grid-item {
-    border: 20px solid red;
-    padding: 20px;
-    font-size: 30px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 2px;
     text-align: center;
   }
