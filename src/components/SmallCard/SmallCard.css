@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Sacramento');
+
+div.card-body{
+    font-family: 'Sacramento', sans-serif;
+    background-color: rgb(240, 237, 210);
+    width: 30vw;
+    height: 10vh;
+    min-height: fit-content;
+    min-width: fit-content;
+    padding: 5vw 5vh;
+    margin: 10vh auto;
+    font-size: 6vh;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 1px 3px 3px var(--shadow-color);
+}
+
+div.card-body div.content{
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+}
