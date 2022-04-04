@@ -2,7 +2,7 @@
     height: 60vh;
     min-height: fit-content;
     width: 50vw;
-    margin: 5% auto;
+    margin: 0 auto;
     padding: 30px;
     border-radius: 10px;
     background-color: rgb(160, 140, 114);
@@ -12,6 +12,7 @@
     overflow: hidden;
     font-family: 'Special Elite', cursive;
 }
+
 .container h1{
     text-align: center;
     margin-bottom: 50px;
