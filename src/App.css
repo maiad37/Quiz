@@ -1,19 +1,21 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
-body{
-    background-color: rgb(59, 59, 23);
+.LandingPage {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(59, 59, 23);
 }
 .grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    margin: 10vh auto;
-    width:fit-content;
-    height: fit-content;
-    box-sizing: border-box;
-  }
-  .grid-item {
-    padding: 2px 4px;
-    text-align: center;
-  }
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 0 auto;
+  width: fit-content;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.grid-item {
+  padding: 2px 4px;
+  text-align: center;
+}
