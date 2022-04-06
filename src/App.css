@@ -1,3 +1,5 @@
+:root{--lightBrown: rgb(160, 140, 114)};
+
 * {
   padding: 0;
   margin: 0;
@@ -5,7 +7,7 @@
 .LandingPage {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(59, 59, 23);
+  background-color:rgb(13, 12, 12);
 }
 .grid-container {
   display: grid;
