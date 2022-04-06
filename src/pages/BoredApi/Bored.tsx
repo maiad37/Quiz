@@ -4,7 +4,8 @@ import axios from "axios";
 import "./Bored.css";
 import SmallCard from "../../components/SmallCard/SmallCard";
 import HomeIcon from "../../images/home-icon.png"
-const Bored = () => {
+
+const Bored = (): JSX.Element => {
   const [activity, setActivity] = useState<string>(""),
     [qNum, setQnum] = useState<number>(0);
   const navigate = useNavigate();
