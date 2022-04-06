@@ -1,28 +1,22 @@
 :root {
-  --cursive-font: 'Sacramento', sans-serif;
+  --cursive-font: "Sacramento", sans-serif;
   --shadow-color: rgba(0, 10, 20, 0.2);
 }
 
-*{
+* {
   padding: 0px;
   margin: 0px;
 }
 
-body{
+body {
   background-image: url(../../images/christina-deravedisian.jpg);
-  background-size: 100vw;
+  background-size: 50vw;
 }
-.buttonBox{
+.buttonBox {
   width: fit-content;
   margin: 0 auto;
 }
-.nxtBtn{
-  background-color: rgb(240, 237, 210);
-  padding: 15px;
-  border-radius: 5px;
-  border: transparent;
-  box-shadow: 2px 2px 2px var(--shadow-color);
-  font-size: 30px;
+.nxtBtn {
   cursor: pointer;
   font-family: var(--cursive-font);
 }
