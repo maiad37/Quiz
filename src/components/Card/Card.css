@@ -5,7 +5,7 @@
     margin: 0 auto;
     padding: 30px;
     border-radius: 10px;
-    background-color: rgb(160, 140, 114);
+    background-color: var(--lightBrown);
     box-shadow: 1px 2px 3px 2px rgb(121, 115, 115);
     font-size: 4vh;
     text-align: justify;
