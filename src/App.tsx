@@ -29,7 +29,7 @@ function App() {
           </div>
           <div className="grid-item">
             <img
-              src="https://images.unsplash.com/photo-1588139094921-01da2d0bc337?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+              src="https://images.unsplash.com/photo-1603366615917-1fa6dad5c4fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
               alt="quiz app"
               width="200px"
               height="200px"
@@ -37,7 +37,7 @@ function App() {
           </div>
           <div className="grid-item">
             <img
-              src="https://images.unsplash.com/photo-1588139094921-01da2d0bc337?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+              src="https://images.unsplash.com/photo-1603366615917-1fa6dad5c4fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
               alt="quiz app"
               width="200px"
               height="200px"
