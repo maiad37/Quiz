@@ -8,9 +8,11 @@
   margin: 0px;
 }
 
-body {
+.App{
+  width: 100vw;
+  height: 100vh;
   background-image: url(../../images/christina-deravedisian.jpg);
-  background-size: 50vw;
+  background-size: 50%;
 }
 .buttonBox {
   width: fit-content;
