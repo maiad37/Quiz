@@ -2,7 +2,8 @@ import "./App.css";
 import { useNavigate } from "react-router-dom";
 import QuizAppLogo from "./images/quizz-app-icon.gif";
 import IdeasAppLogo from "./images/ideas-icon.png";
-function App() {
+
+function App(): JSX.Element {
   const navigate = useNavigate();
 
   return (
