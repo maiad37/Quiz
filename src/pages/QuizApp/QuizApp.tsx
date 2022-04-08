@@ -4,7 +4,9 @@ import { useNavigate } from 'react-router-dom';
 import HomeIcon from "../../images/home-icon.png"
 
 const QuizApp = (): JSX.Element =>{
+
   const navigate = useNavigate()
+  
   return (
     <div className="QuizApp">
       <div className="btns">
